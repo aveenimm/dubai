@@ -1,5 +1,0 @@
-{
-  "python.testing.pytestArgs": ["stepik"],
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
-}
