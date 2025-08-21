@@ -16,37 +16,3 @@ def test_update_words():
     words["pear"] = 5
     assert words["banana"] == 4
     assert words["pear"] == 5
-
-
-# Выведи значение по ключу "retries", если такого ключа нет — верни 0.
-config = {"timeout": 30}
-
-
-def test_con():
-    assert 'retries' in config
-    if 'retries' not in config:
-        return 0
-
-# Сделать класс, который объединяет тесты по студентам. Сделать фикстуру, которая отдаёт текущего студента для теста. Сделать тест с параметризацией, который проверяет, что балл студента не меньше 60.
-
-
-class Teststudents:
-    @pytest.fixture
-    def students():
-        students = [
-            ("Alice", 85),
-            ("Bob", 72),
-            ("Charlie", 90),
-            ("Diana", 65)
-        ]
-    return [0]
-
-
-@pytest.mark.parametrize('shit', students, [
-    ("Alice", 85),
-    ("Bob", 72),
-    ("Charlie", 90),
-    ("Diana", 65)
-])
-def test_pampam(shit):
-    assert
